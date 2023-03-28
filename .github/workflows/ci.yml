@@ -59,7 +59,7 @@ jobs:
           asset_content_type: application/octet-stream
 
       - name: Publish to Registry
-        uses: elgohr/Publish-Docker-Github-Action@master
+        uses: elgohr/Publish-Docker-Github-Action@v5
         env:
           VERSION: ${{ steps.get_version.outputs.VERSION }}
         with:
